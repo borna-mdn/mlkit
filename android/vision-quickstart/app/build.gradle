@@ -39,6 +39,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
     // Do NOT compress tflite model files (need to call out to developers!)
     aaptOptions {
         noCompress "tflite"
